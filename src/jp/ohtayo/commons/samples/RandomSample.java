@@ -14,7 +14,8 @@ public class RandomSample {
 		//ランダムグラスのインスタンス化
 		//Random rand = new Random(Random.LCG);
 //		Random rand = new Random(Random.XOR);
-		Random rand = new Random(Random.SFMT);
+//		Random rand = new Random(Random.SFMT);
+		Random rand = new Random(Random.MT);
 
 		//ランダム値生成の例
 		System.out.println(rand.nextBoolean());

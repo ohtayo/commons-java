@@ -9,7 +9,7 @@ import jp.ohtayo.commons.log.Logging;
  * 乱数を生成するクラスです。<br>
  * 乱数生成手法を選択します。<br>
  * SFMT : SIMD-oriented Fast Mersenne Twister<br>
- * MT : Mersenne twister(将来対応)<br>
+ * MT : Mersenne twister<br>
  * XOR : Xor shift<br>
  * LCG : Linear congruential generators(java.util.Random クラスの生成手法)<br>
  * 指定例：Random r = new Random(Random.SFMT, seed);<br>
@@ -31,7 +31,7 @@ public class Random{
 	/** 乱数生成手法クラスのsetSeedメソッド		*/	private Method setSeed;
 
 	/** SFMT 乱数生成クラス	*/	public static final String SFMT	= "jp.ohtayo.commons.random.SFMT";
-	/** MT 乱数生成クラス		*/	public static final String MT		= "jp.ohtayo.commons.random.MT";
+	/** MT 乱数生成クラス		*/	public static final String MT		= "jp.ohtayo.commons.random.MTRandom";
 	/** XOR 乱数生成クラス	*/	public static final String XOR	= "jp.ohtayo.commons.random.Xor128";
 	/** LCG 乱数生成クラス	*/	public static final String LCG	= "java.util.Random";
 
