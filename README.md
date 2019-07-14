@@ -1,2 +1,2 @@
 # ohtayo-commons-java
-The ohtayo-commons-java provides basic classes for developing mathmatical programming projects in java languages.
+The ohtayo-commons-java provides basic classes for developing mathematical programming projects in java languages.
