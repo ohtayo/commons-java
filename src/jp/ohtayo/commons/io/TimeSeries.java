@@ -13,7 +13,8 @@ import jp.ohtayo.commons.log.Logging;
 /**
  * 時系列データのクラスです。<br>
  * データの間引き・補間・フィルタ等の処理メソッドを提供します。
- * @author ohtayo <ohta.yoshihiro@outlook.jp></>
+ *
+ * @author ohtayo <ohta.yoshihiro@outlook.jp>
  */
 public class TimeSeries extends Matrix {
 

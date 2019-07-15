@@ -4,7 +4,8 @@ package jp.ohtayo.commons.random;
  * 乱数生成クラス<br>
  * 乱数生成にXorshiftを利用します。<br>
  * 関数仕様をjava.util.Randomに合わせています。<br>
- * @author ohtayo <ohta.yoshihiro@outlook.jp></>
+ *
+ * @author ohtayo <ohta.yoshihiro@outlook.jp>
  */
 public class Xor128 {
 

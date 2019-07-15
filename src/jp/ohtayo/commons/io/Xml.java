@@ -11,7 +11,8 @@ import jp.ohtayo.commons.log.Logging;
 
 /**
  * XMLファイルの読み書きをするクラスです。<br>
- * @author ohtayo <ohta.yoshihiro@outlook.jp></>
+ *
+ * @author ohtayo <ohta.yoshihiro@outlook.jp>
  */
 public class Xml {
 	

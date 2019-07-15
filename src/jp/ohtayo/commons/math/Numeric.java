@@ -1,9 +1,10 @@
 package jp.ohtayo.commons.math;
 
 /**
-* 数値計算メソッドを提供するクラスです。<br>
-* 
-*/
+ * 数値計算メソッドを提供するクラスです。<br>
+ *
+ * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ */
 public class Numeric {
 	
 	/**

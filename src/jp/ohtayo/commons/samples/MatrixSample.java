@@ -6,8 +6,9 @@ import jp.ohtayo.commons.math.Matrix;
 import jp.ohtayo.commons.math.Vector;
 
 /**
- * Sample codes of Matrix class
- * @author ohtayo <ohta.yoshihiro@outlook.jp></>
+ * Sample codes of Matrix class.
+ *
+ * @author ohtayo <ohta.yoshihiro@outlook.jp>
  */
 public class MatrixSample {
 

@@ -9,7 +9,7 @@ import jp.ohtayo.commons.util.Cast;
  * 配列の操作や数値計算を行うメソッドを含みます。<br>
  * 内部配列はdouble[]です。<br>
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp></>
+ * @author ohtayo <ohta.yoshihiro@outlook.jp>
  */
 public class Vector {
 

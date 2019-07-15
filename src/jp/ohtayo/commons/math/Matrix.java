@@ -3,11 +3,12 @@ package jp.ohtayo.commons.math;
 import jp.ohtayo.commons.random.Random;
 
 /**
-* 行列クラスです。<br>
-* 行列同士の四則演算や、転置行列・逆行列・行列式等の計算を行うメソッドを含みます。<br>
-* 内部行列はdouble[][]で表します。<br>
- * @author ohtayo <ohta.yoshihiro@outlook.jp></>
-*/
+ * 行列クラスです。<br>
+ * 行列同士の四則演算や、転置行列・逆行列・行列式等の計算を行うメソッドを含みます。<br>
+ * 内部行列はdouble[][]で表します。<br>
+ *
+ * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ */
 public class Matrix{
 
 	protected double[][] matrix;

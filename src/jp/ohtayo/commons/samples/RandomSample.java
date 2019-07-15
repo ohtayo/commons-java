@@ -6,7 +6,8 @@ import jp.ohtayo.commons.math.Vector;
 
 /**
  * Sample codes of Random class
- * @author ohtayo <ohta.yoshihiro@outlook.jp></>
+ *
+ * @author ohtayo <ohta.yoshihiro@outlook.jp>
  */
 public class RandomSample {
 	public static void main(String[] args) {

@@ -6,7 +6,8 @@ import jp.ohtayo.commons.math.Vector;
 
 /**
  * .csv(カンマ区切り)のファイルを読み書きするクラスです。<br>
- * @author ohtayo <ohta.yoshihiro@outlook.jp></>
+ *
+ * @author ohtayo <ohta.yoshihiro@outlook.jp>
  */
 public class Csv {
 
