@@ -81,6 +81,12 @@ public class Numeric {
 		else
 			return false;
 	}
+
+	/**
+	 *
+	 * @param data
+	 * @return
+	 */
 	public static boolean[] any(double[][] data)
 	{
 		Matrix temp = new Matrix(data);
@@ -110,7 +116,17 @@ public class Numeric {
 			result[i] = all(temp.getColumn(i).get());
 		return result;
 	}
-	
+
+	/**
+	 * 任意の単位で丸める
+	 * @param in 丸めたい数
+	 * @param unit 丸める単位
+	 * @return 丸められた数
+	 */
+	public static double round(double in, double unit)
+	{
+		return (double)Math.round( in/unit ) * unit;
+	}
 
 }
 //file end.-------------------------------------------------------------------//
