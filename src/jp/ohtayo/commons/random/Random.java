@@ -31,7 +31,6 @@ public class Random{
 	/** 乱数生成手法クラスのsetSeedメソッド		*/	private Method setSeed;
 
 	/** SFMT 乱数生成クラス	*/	public static final String SFMT	= "jp.ohtayo.commons.random.SFMT";
-	/** MT 乱数生成クラス		*/	public static final String MT		= "jp.ohtayo.commons.random.MTRandom";
 	/** XOR 乱数生成クラス	*/	public static final String XOR	= "jp.ohtayo.commons.random.Xor128";
 	/** LCG 乱数生成クラス	*/	public static final String LCG	= "java.util.Random";
 
