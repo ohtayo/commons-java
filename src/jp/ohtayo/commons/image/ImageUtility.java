@@ -1,13 +1,5 @@
 package jp.ohtayo.commons.image;
 
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBuffer;
-import java.awt.image.DataBufferByte;
-import java.io.File;
-import javax.imageio.ImageIO;
-
-import jp.ohtayo.commons.log.Logging;
-
 /**
  * 画像処理に必要なツール関数を提供するクラスです。<br>
  * int型ARGBデータのコンバート関数や画像読み書き等のメソッドを含みます。<br>
