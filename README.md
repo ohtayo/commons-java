@@ -54,5 +54,7 @@ The ohtayo-commons-java provides basic classes for developing mathematical progr
 ### More detail
 see jp.ohtayo.commons.samples.
 
-## Licence
-The ohtayo-commons-java is open-sourced software licensed under the [MIT license](https://github.com/ohtayo/commons-java/blob/master/LICENSE).
+## License
+The ohtayo-commons-java is open-sourced software licensed under the [MIT license](https://github.com/ohtayo/commons-java/blob/master/LICENSE)
+except SFMT19937.java.
+SFMT19937.java is licensed under the Modified BSD license.
