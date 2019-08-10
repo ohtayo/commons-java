@@ -10,7 +10,7 @@ import javax.swing.JFrame;
 /**
  * BufferedImageクラスの画像をフォーム表示と拡縮するクラスです。
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  */
 public class Picture extends JFrame {
 

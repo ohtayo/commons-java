@@ -8,7 +8,7 @@ import jp.ohtayo.commons.math.Vector;
 /**
  * Sample codes of Matrix class.
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  */
 public class MatrixSample {
 
@@ -27,7 +27,7 @@ public class MatrixSample {
 		Matrix B = new Matrix(3, 3);
 		System.out.println("B = ");
 		System.out.println(B.toString());
-		
+
 		//Matrix(int dimension)
 		//デフォルトコンストラクタ
 		B = new Matrix(3);
@@ -54,7 +54,7 @@ public class MatrixSample {
 		Matrix D = new Matrix(A);
 		System.out.println("D = ");
 		System.out.println(D.toString());
-		
+
 		//Matrix	abs()
 		//行列の絶対値を返します。
 		System.out.println("A.abs() = ");

@@ -14,7 +14,7 @@ import jp.ohtayo.commons.log.Logging;
  * 時系列データのクラスです。<br>
  * データの間引き・補間・フィルタ等の処理メソッドを提供します。
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  */
 public class TimeSeries extends Matrix {
 
@@ -40,9 +40,9 @@ public class TimeSeries extends Matrix {
 	
 	/**
 	 * csvファイルから時系列データを読み取って生成します。
-	 * @param fileName
-	 * @param header
-	 * @param format
+	 * @param fileName 読み込みCSVファイル名
+	 * @param header ヘッダ行数
+	 * @param format 時刻列のフォーマット
 	 */
 	public TimeSeries(String fileName, int header, String format)
 	{

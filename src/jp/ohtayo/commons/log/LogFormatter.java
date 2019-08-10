@@ -17,7 +17,7 @@ import java.util.logging.LogRecord;
  * ログレベルには以下があります。<br>
  * FINEST FINER FINE CONFIG INFO WARN SEVERE<br>
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  * @see java.util.logging.Logger
  * @see java.util.logging.LogManager
  */

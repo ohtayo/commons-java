@@ -5,7 +5,7 @@ package jp.ohtayo.commons.random;
  * 乱数生成にSIMD-oriented Fast Mersenne Twisterを利用しています。<br>
  * 関数仕様をjava.util.Randomに合わせています。<br>
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  */
 public class SFMT {
 
@@ -67,7 +67,9 @@ public class SFMT {
     	return nextInt()>>>(32-bits);
     }
 
-	/** ０か１を返す乱数 */
+	/** ０か１を返す乱数
+	 * @return 0 or 1
+	 */
 	synchronized public int NextBit() {
 		if (--coin_bits==-1)
 		{ coin_bits=31; return(coin_save=sfmt.next())&1; }
@@ -76,7 +78,7 @@ public class SFMT {
 
   /**
 	* true / false をランダムに返します。<br>
-	* @return true / false
+	* @return true or false
 	*/
 	public boolean nextBoolean()
 	{
@@ -86,7 +88,9 @@ public class SFMT {
 			return true;
 	}
 
-	/** ０から２５５を返す乱数 */
+	/** ０から２５５を返す乱数
+	 * @return byte value
+	 */
 	synchronized public int NextByte() {
 		if (--byte_pos==-1)
 		{ byte_pos=3; return(int)(byte_save=sfmt.next())&255; }
@@ -107,7 +111,9 @@ public class SFMT {
 		System.arraycopy(values, 0, bytes, 0, bytes.length);
 	}
 
-	/** ０以上１未満の乱数(53bit精度) */
+	/** ０以上１未満の乱数(53bit精度)
+	 * @return randomized value [0, 1)
+	 * */
 	public double NextUnif() {
 		double z=sfmt.next()>>>11,y=sfmt.next();
 		if (y<0) y+=4294967296.0;
@@ -142,7 +148,10 @@ public class SFMT {
 		return sfmt.next();
 	}
 
-	/** 丸め誤差のない０以上 range_ 未満の整数乱数 */
+	/** 丸め誤差のない０以上 range_ 未満の整数乱数
+	 * @param range_ max of the randomize value
+	 * @return randomized integer value [0 range_)
+	 */
 	synchronized public int NextIntEx(int range_) {
 		int y_,base_,remain_; int shift_;
 

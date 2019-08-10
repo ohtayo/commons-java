@@ -7,15 +7,15 @@ import jp.ohtayo.commons.random.Random;
  * 行列同士の四則演算や、転置行列・逆行列・行列式等の計算を行うメソッドを含みます。<br>
  * 内部行列はdouble[][]で表します。<br>
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  */
 public class Matrix{
 
 	protected double[][] matrix;
 	/**
 	 * 行数と列数を指定して行列を生成します。
-	 * @param row
-	 * @param column
+	 * @param row number of rows
+	 * @param column number of columns
 	 */
 	public Matrix(int row, int column)
 	{
@@ -23,7 +23,7 @@ public class Matrix{
 	}
 	/**
 	 * 行数と列数を指定して行列を生成します。
-	 * @param dimension
+	 * @param dimension dimension
 	 */
 	public Matrix(int dimension)
 	{
@@ -42,6 +42,7 @@ public class Matrix{
 	/**
 	 * 値を指定して行列を生成します。1行n列もしくはn行1列の行列を作成します．
 	 * @param target 行列の初期値
+   * @param direction 行or列どちらを作成するか
 	 */
 	public Matrix(double[] target, String direction)
 	{
@@ -186,8 +187,8 @@ public class Matrix{
 	}
 	/**
 	 * 行列の値を設定します。
-	 * @param target
-	 */
+	 * @param target new matrix element
+   */
 	public void set(double[][] target)
 	{
 		matrix = new double[target.length][target[0].length];
@@ -413,6 +414,7 @@ public class Matrix{
 	/**
 	* 90, 180, 270°に回転した行列を返します。
 	* @param angle 回転角度
+   * @return rotated matrix
 	*/
 	public Matrix rotate(int angle)
 	{
@@ -442,6 +444,7 @@ public class Matrix{
 	/**
 	* 上下もしくは左右に反転した行列を返します。
 	* @param string 反転方向 INVERT_UPPER_BOTTOM or INVERT_LEFT_RIGHT
+   * @return inverted matrix
 	*/
 	public Matrix invert(String string)
 	{
@@ -700,6 +703,7 @@ public class Matrix{
 	/**
 	* 行列の各列もしくは各行ごとの最大値を返します。<br>
 	* @param direction 最大値を求める方向("row"もしくは"column")
+   * @param index 最大値のindex(output)
 	* @return 最大値配列
 	*/
 	public Vector max(String direction, int[] index)

@@ -5,7 +5,7 @@ import jp.ohtayo.commons.math.Vector;
 /**
  * Sample codes of Vector class
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  */
 public class VectorSample {
 	public static void main(String[] args){

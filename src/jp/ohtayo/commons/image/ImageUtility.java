@@ -4,7 +4,7 @@ package jp.ohtayo.commons.image;
  * 画像処理に必要なツール関数を提供するクラスです。<br>
  * int型ARGBデータのコンバート関数や画像読み書き等のメソッドを含みます。<br>
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  */
 public class ImageUtility{
 	

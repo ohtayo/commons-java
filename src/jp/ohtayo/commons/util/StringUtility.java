@@ -4,7 +4,7 @@ package jp.ohtayo.commons.util;
  * 文字列操作に関するユーティリティクラスです。<br>
  * 将来的にorg.apache.commons.lang.StringUtilsに代替します．<br>
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  */
 public class StringUtility {
 	/**

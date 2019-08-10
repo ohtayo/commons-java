@@ -3,7 +3,7 @@ package jp.ohtayo.commons.util;
 /**
  * 行列・配列の型をキャストするクラスです。<br>
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  */
 public class Cast {
 	

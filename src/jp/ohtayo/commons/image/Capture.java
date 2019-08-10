@@ -13,7 +13,7 @@ import jp.ohtayo.commons.log.Logging;
 /**
 * Robotクラスを用いて画面のキャプチャを行うクラスです。<br>
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
 */
 public class Capture {
 

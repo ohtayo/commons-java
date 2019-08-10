@@ -12,7 +12,7 @@ import jp.ohtayo.commons.math.Vector;
 /**
  * FileとCSVデータ操作のサンプルプログラム<br>
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  */
 public class FileSample {
 	public static void main(String[] args) {

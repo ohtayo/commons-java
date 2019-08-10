@@ -3,7 +3,7 @@ package jp.ohtayo.commons.math;
 /**
  * 数値計算メソッドを提供するクラスです。<br>
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  */
 public class Numeric {
 	
@@ -83,9 +83,9 @@ public class Numeric {
 	}
 
 	/**
-	 *
-	 * @param data
-	 * @return
+	 * dataに非ゼロ要素が含まれるかどうか
+	 * @param data チェックしたい行列
+	 * @return 非ゼロ要素がある場合true
 	 */
 	public static boolean[] any(double[][] data)
 	{

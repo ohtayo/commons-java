@@ -14,7 +14,7 @@ import jp.ohtayo.commons.log.Logging;
  * 文字列を読み書きするクラスです。<br>
  * UTF-16非対応、UTF-8 BOM有無両対応<br>
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  */
 public class Text {
 
@@ -101,6 +101,7 @@ public class Text {
 
 	/**
 	 * 保持するテキストをStringで返します。
+	 * @return 読み込んだString型のテキスト
 	 */
 	public String getString()
 	{
@@ -109,6 +110,7 @@ public class Text {
 
 	/**
 	 * 保持するテキストをStringで返します。
+	 * @return 読み込んだString型のテキスト
 	 */
 	public String toString()
 	{

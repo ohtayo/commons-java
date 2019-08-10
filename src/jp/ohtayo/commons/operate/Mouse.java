@@ -12,7 +12,7 @@ import jp.ohtayo.commons.log.Logging;
 /**
  * Robotクラスを用いてマウスの位置とクリック操作を行うクラスです。<br>
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  */
 public class Mouse {
 	

@@ -28,7 +28,7 @@ import javax.imageio.ImageIO;
  * 画像処理用のメソッドを提供するクラスです。<br>
  * 画像切抜きや拡縮、画像比較を行うメソッド等を含みます。<br>
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
 */
 public class ImageProcessing {
 
@@ -81,7 +81,7 @@ public class ImageProcessing {
 	/**
 	 * 画像をファイルへ書き込みます。<br>
 	 * @param fileName 画像ファイルのファイル名
-	 * return 書き込めたらtrue
+	 * @return 書き込めたらtrue
 	 */
 	public boolean write(String fileName)
 	{
@@ -260,6 +260,7 @@ public class ImageProcessing {
 	/**
 	 * 画像を比較し、似ていればtrueを、そうでなければfalseを返します。<br>
 	 * @param target 2つ目の画像ファイルバッファ
+	 * @param threshold 比較のスレッショルド
 	 * @return 似ていればtrue
 	 */
 	public boolean determine(BufferedImage target, double threshold)

@@ -16,7 +16,7 @@ import jp.ohtayo.commons.log.Logging;
  * <br>
  * 乱数生成に加え、ランダム配列・行列生成や配列シャッフルを行うメソッドを提供します。<br>
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  */
 public class Random{
 

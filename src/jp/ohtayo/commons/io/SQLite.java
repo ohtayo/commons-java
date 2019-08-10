@@ -10,7 +10,7 @@ import java.util.ArrayList;
 /**
  * Accessor for SQLite3 database.
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  */
 public class SQLite {
 
@@ -84,7 +84,7 @@ public class SQLite {
 
 	/**
 	 * 開いているDBに対しクエリを実行してResultを保持<br>
-	 * @param query
+	 * @param query SQL query
 	 */
 	public void executeSingleQuery(String query)
 	{
@@ -103,7 +103,8 @@ public class SQLite {
 	}
 
 	/**
-	 * ResultSetの1列目のすべてのデータをString配列で取得
+	 * ResultSetの指定列目のすべてのデータをString配列で取得
+	 * @param columnIndex 列番号
 	 * @return データのString配列
 	 */
 	public String[] getStringData(int columnIndex)

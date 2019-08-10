@@ -8,7 +8,7 @@ import jp.ohtayo.commons.log.Logging;
  * コンフィグ設定をXMLで外部に保存・読込するための基本となるクラスです。<br>
  * 本クラスを継承したクラスのフィールドをXMLで書込・読込する関数を提供します。<br>
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  * @see jp.ohtayo.commons.io.Xml
  */
 public class ConfigBase {

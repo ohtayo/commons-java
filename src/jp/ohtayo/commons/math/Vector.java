@@ -9,7 +9,7 @@ import jp.ohtayo.commons.util.Cast;
  * 配列の操作や数値計算を行うメソッドを含みます。<br>
  * 内部配列はdouble[]です。<br>
  *
- * @author ohtayo <ohta.yoshihiro@outlook.jp>
+ * @author ohtayo (ohta.yoshihiro@outlook.jp)
  */
 public class Vector {
 
@@ -100,6 +100,7 @@ public class Vector {
 	}
 	/**
 	* 配列を文字列として返します。axisによって配列の方向を指定します。<br>
+	 * @param direction 文字列にする配列の方向
 	* @return 変換した文字列
 	*/
 	public String toString(String direction)
@@ -349,7 +350,7 @@ public class Vector {
 	}
 	/**
 	 * 2つのベクトルの内積(各要素ごとの積の和)を返します。
-	 * @param target
+	 * @param target 内積を計算したい対象のベクトル
 	 * @return 自分とtargetの内積
 	 */
 	public double innerProduct(Vector target)
