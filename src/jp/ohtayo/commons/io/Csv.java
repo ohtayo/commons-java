@@ -177,9 +177,10 @@ public class Csv {
 
 		//行列の値をバッファに追加
 		for (int i = 0; i<matrix.length; i++){
-			for (int j = 0; j<matrix[i].length; j++){
+			for (int j = 0; j<matrix[i].length-1; j++){
 				buffer.append(matrix[i][j]+",");
 			}
+			buffer.append(matrix[i][matrix[i].length-1]);	// 末尾にはコロンをつけない
 			buffer.append("\r\n");
 		}
 
