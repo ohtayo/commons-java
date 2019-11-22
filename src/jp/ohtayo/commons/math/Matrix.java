@@ -358,7 +358,7 @@ public class Matrix{
 	* @param column 排除したい列
 	* @return 排除した行列
 	*/
-	public Matrix spritMatrix(int row, int column)
+	public Matrix splitMatrix(int row, int column)
 	{
 		double[][] result = new double[length()-1][columnLength()-1];
 		int m, n;
@@ -637,7 +637,7 @@ public class Matrix{
 
 			for( i=0; i<length(); i++ )
 			{
-				cofactorMatrix = spritMatrix(i,0);
+				cofactorMatrix = splitMatrix(i,0);
 				if( i%2 == 0)	det += matrix[i][0]*cofactorMatrix.determinant();
 				else			det -= matrix[i][0]*cofactorMatrix.determinant();
 			}
@@ -660,11 +660,11 @@ public class Matrix{
 		{
 			for(int j=0; j<columnLength(); j++ )
 			{
-				if( (i+j)%2 == 0)	result[i][j] = spritMatrix(i, j).determinant();
-				else				result[i][j] = (-1)*spritMatrix(i, j).determinant();
+				if( (i+j)%2 == 0)	result[i][j] = splitMatrix(i, j).determinant();
+				else				result[i][j] = (-1)*splitMatrix(i, j).determinant();
 			}
 		}
-		return new Matrix(result).transpose().multiply(  1/determinant() );
+		return new Matrix(result).transpose().multiply( 1/determinant() );
 	}
 
 
@@ -935,9 +935,9 @@ public class Matrix{
 	}
 
 	/**
-	* 行列の各列もしくは各行ごとの平均値を返します。<br>
-	* @param direction 平均値を求める方向("row"もしくは"column")
-	* @return 平均値配列
+	* 行列の各列もしくは各行ごとの和を返します。<br>
+	* @param direction 和を求める方向("row"もしくは"column")
+	* @return 和の配列
 	*/
 	public Vector sum(String direction)
 	{
