@@ -128,5 +128,29 @@ public class Numeric {
 		return (double)Math.round( in/unit ) * unit;
 	}
 
+	/**
+	 * 正規化する
+	 * @param in 正規化したい数
+	 * @param max 正規化の最大値
+	 * @param min 正規化の最小値
+	 */
+	public static double normalize(double in, double max, double min)
+	{
+		double diff = max-min;
+		return (in-min) / diff;
+	}
+
+	/**
+	 * 非正規化する
+	 * @param in 非正規化したい数
+	 * @param max 非正規化の最大値
+	 * @param min 非正規化の最小値
+	 */
+	public static double denormalize(double in, double max, double min)
+	{
+		double diff = max-min;
+		return in * diff + min;
+	}
+
 }
 //file end.-------------------------------------------------------------------//

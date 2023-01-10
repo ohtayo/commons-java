@@ -638,7 +638,7 @@ public class Vector {
 
 		double difference = maxValue - minValue;
 		for (int i=0; i<length(); i++)
-			result[i] = (result[i] - minValue)/difference;
+			result[i] = (result[i]-minValue) / difference;
 
 		return new Vector(result);
 	}
@@ -653,6 +653,26 @@ public class Vector {
 		double minValue = min();
 
 		return normalize(maxValue, minValue);
+	}
+
+	/**
+	 * 配列を非正規化して返します<br>
+	 * 最大値・最小値を与えると，(0～1)の値のVector配列を最大値・最小値までに変換した配列を返します<br>
+	 * @param maxValue 非正規化の最大値
+	 * @param minValue 非正規化の最小値
+	 * @return 非正規化された配列
+	 */
+	public Vector denormalize(double maxValue, double minValue)
+	{
+		//事前に別メモリに配列コピー
+		double[] result = new double[length()];
+		System.arraycopy(vector, 0, result, 0, length());
+
+		double difference = maxValue - minValue;
+		for (int i=0; i<length(); i++)
+			result[i] = result[i]*difference + minValue;
+
+		return new Vector(result);
 	}
 
 	/**

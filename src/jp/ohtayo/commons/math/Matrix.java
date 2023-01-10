@@ -1000,7 +1000,23 @@ public class Matrix{
 		}
 		return result;
 	}
-
+	/**
+	 * 行列を各列ごとに非正規化して返します。<br>
+	 * 0～1の行列に最大値配列・最小値配列を与えると、各列ごとに最大値～最小値までに変換した行列を返します。<br>
+	 * 最大値配列・最小値配列の長さは行列の列数と等しい必要があります。<br>
+	 * @param maxValue 正規化の最大値配列
+	 * @param minValue 正規化の最小値配列
+	 * @return 正規化された行列
+	 */
+	public Matrix denormalize(double[] maxValue, double[] minValue)
+	{
+		Matrix result = new Matrix(length(), columnLength());
+		for (int i=0; i<columnLength(); i++)
+		{
+			result.setColumn(i, getColumn(i).denormalize(maxValue[i], minValue[i]));
+		}
+		return result;
+	}
 	/**
 	 * x列目とy列目のデータの共分散Cxyを求めます。<br>
 	 * 共分散Cov(X,Y) = E[(X-E[X])(Y-E[Y])]
